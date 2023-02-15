@@ -1,0 +1,46 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "react app",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ @babel/preset-react ] ] -o public/js/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:webpack": "webpack -p --define process.env.NODE_ENV='\"production\"'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmaanLaghari1/react-skeleton.git"
+  },
+  "keywords": [
+    "pro"
+  ],
+  "author": "amaan laghari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmaanLaghari1/react-skeleton/issues"
+  },
+  "homepage": "https://github.com/AmaanLaghari1/react-skeleton#readme",
+  "dependencies": {
+    "create-react-class": "^15.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "require": "^2.4.20",
+    "watchify": "^4.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "es2015": "^0.0.0"
+  }
+}
